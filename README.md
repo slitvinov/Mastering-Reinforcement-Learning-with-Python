@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/slitvinov/Mastering-Reinforcement-Learning-with-Python/HEAD)
+
 <h1>Intro</h2>
 
 Code from a book
@@ -14,6 +16,3 @@ install and run Jupyter Notebook
 python -m pip install notebook
 jupyter notebook
 </code>
-
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/slitvinov/Mastering-Reinforcement-Learning-with-Python/HEAD)
