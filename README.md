@@ -8,3 +8,6 @@ Install
 <code>
 python -m pip install -r requirements.txt
 </code>
+
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/slitvinov/Mastering-Reinforcement-Learning-with-Python/HEAD
