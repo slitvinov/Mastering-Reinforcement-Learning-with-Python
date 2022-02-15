@@ -22,4 +22,5 @@ jupyter notebook
 <pre>
 for i in */*.ipynb; do jupyter nbconvert --to python "$i"; done
 for i in */*.ipynb; do  jupyter nbconvert --clear-output --inplace "$i"; done
+awk '/^from.*import/ || /^import/ {sub(/\..*/, "", $2); print $2}' */*.py */*/*.py | sort | uniq
 </pre>

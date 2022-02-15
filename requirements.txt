@@ -6,5 +6,6 @@ pandas
 pybullet
 ray
 scipy
+sklearn
 tensorflow
 tensortrade
