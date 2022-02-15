@@ -1,6 +1,10 @@
+cma
 cufflinks
+gym
 numpy
 pandas
 plotly
+pybullet
+ray
 scipy
 tensorflow
