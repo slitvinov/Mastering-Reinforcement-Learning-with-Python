@@ -3,6 +3,8 @@ gym
 matplotlib
 numpy
 pandas
+pybullet
 ray
 scipy
 tensorflow
+tensortrade
