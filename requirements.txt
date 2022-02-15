@@ -2,4 +2,3 @@ cufflinks
 numpy
 pandas
 plotly
-
