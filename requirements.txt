@@ -1,7 +1,11 @@
+box2d-kengz
 box2d-py
+Box2D
+pygame
 cma
 cufflinks
 gym
+matplotlib
 numpy
 pandas
 plotly
