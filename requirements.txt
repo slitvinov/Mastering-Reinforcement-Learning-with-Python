@@ -7,4 +7,4 @@ ray
 scipy
 sklearn
 tensorflow
-tensortrade
+
