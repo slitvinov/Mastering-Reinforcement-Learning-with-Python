@@ -2,8 +2,8 @@ cma
 gym
 matplotlib
 numpy
+pandas
 ray
 scipy
 sklearn
 tensorflow
-
