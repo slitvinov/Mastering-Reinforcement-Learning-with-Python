@@ -113,7 +113,7 @@ if __name__ == "__main__":
     np.random.seed(0)
     ray.init()
     cem = CEM(
-        env_name="CartPole-v0",
+        env_name="CartPole-v1",
         optimizer="cem",
         look_ahead=10,
         num_parallel=50,
