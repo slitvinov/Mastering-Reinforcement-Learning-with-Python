@@ -24,7 +24,7 @@ if __name__ == "__main__":
     }
     #trainer = ApexTrainer(env=TicTacToe, config=config)
     trainer = PPOTrainer(env=TicTacToe, config=config)
-    trainer.restore("ttt_model/checkpoint_119/checkpoint-119")
+    #trainer.restore("ttt_model/checkpoint_119/checkpoint-119")
     obs = env.reset()
     print(obs)
     done = False
