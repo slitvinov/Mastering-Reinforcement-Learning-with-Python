@@ -4,6 +4,7 @@ matplotlib
 numpy
 pandas
 ray
+ray[rllib]
 scipy
 sklearn
 tensorflow
