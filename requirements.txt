@@ -1,5 +1,6 @@
 cma
 gym
+gym[box2d]
 matplotlib
 numpy
 pandas
