@@ -8,6 +8,7 @@ import ray
 @ray.remote
 def rollout(env, actions, n_actions, look_ahead):
     env = copy.deepcopy(env)
+    env.reset()
     sampled_reward = 0
     for i in range(look_ahead):
         s_ix = i * n_actions
