@@ -1,16 +1,10 @@
 from copy import deepcopy
-
-import ray
-from ray import tune
-
-from ray.rllib.agents.ppo.ppo import PPOTrainer, DEFAULT_CONFIG
-
-import numpy as np
-import gym
 from gym.envs.classic_control.pendulum import PendulumEnv
-from ray.rllib.env.meta_env import MetaEnv
-
 from penenv2 import PenEnv2
+from ray import tune
+from ray.rllib.agents.ppo.ppo import PPOTrainer, DEFAULT_CONFIG
+import gym
+import ray
 
 config = deepcopy(DEFAULT_CONFIG)
 
@@ -42,7 +36,8 @@ tune.run(
                         "lstm_cell_size": 128,
                         "lstm_use_prev_action_reward": True,
                         "max_seq_len": 10
-                      }
+                      },
+            "use_meta_env": True,
         }
     ),
     checkpoint_freq=10,

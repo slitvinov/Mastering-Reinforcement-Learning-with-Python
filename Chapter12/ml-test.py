@@ -1,17 +1,11 @@
 from copy import deepcopy
-
-import ray
-from ray import tune
-
-#from ray.rllib.examples.env.pendulum_mass import PendulumMassEnv
-from ray.rllib.agents.maml.maml import MAMLTrainer, DEFAULT_CONFIG
-
-import numpy as np
-import gym
 from gym.envs.classic_control.pendulum import PendulumEnv
-from ray.rllib.env.meta_env import MetaEnv
-
 from penenv3 import PenEnv
+from ray import tune
+from ray.rllib.agents.maml.maml import MAMLTrainer, DEFAULT_CONFIG
+import gym
+import numpy as np
+import ray
 
 config = deepcopy(DEFAULT_CONFIG)
 
@@ -43,7 +37,8 @@ tune.run(
             "clip_actions": False,
             "model": {"fcnet_hiddens": [64, 64],
                       "free_log_std": True
-                      }
+                      },
+            "use_meta_env": True,
         }
     ),
     checkpoint_freq=10,
