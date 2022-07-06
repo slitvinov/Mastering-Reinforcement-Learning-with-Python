@@ -19,8 +19,17 @@ jupyter notebook
 
 <h2>Hacking</h2>
 
+Convert to python
 <pre>
-for i in */*.ipynb; do jupyter nbconvert --to python "$i"; done
-for i in */*.ipynb; do  jupyter nbconvert --clear-output --inplace "$i"; done
+for i in */*.ipynb; do jupyter nbconvert --to python "$i" || break; done
+</pre>
+
+Clean output
+<pre>
+for i in */*.ipynb; do  jupyter nbconvert --clear-output --inplace "$i" || break; done
+</pre>
+
+List of imported modules
+<pre>
 awk '/^from.*import/ || /^import/ {sub(/\..*/, "", $2); print $2}' */*.py */*/*.py | sort | uniq
 </pre>
